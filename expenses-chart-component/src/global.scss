@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box; 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+body {
+    background-color: $cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: $font; 
+    font-weight: $fw-reg; 
+}
