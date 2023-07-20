@@ -91,7 +91,7 @@
 
 <style lang="scss">
   @use "sass:color";
-  @import "../variables";
+  @import "../variables.scss";
 
   .chart-container {
     width: 100%;

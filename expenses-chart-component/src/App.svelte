@@ -33,7 +33,7 @@
 {/if}
 
 <style lang="scss">
-  @import "./_variables";
+  @import "./_variables.scss";
 
   .wrapper {
     height: clamp(60vh, 660px, 90vh);

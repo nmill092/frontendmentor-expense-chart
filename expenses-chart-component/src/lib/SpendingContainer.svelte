@@ -15,7 +15,7 @@
 </div>
 
 <style lang="scss">
-  @import "../variables";
+  @import "../variables.scss";
   .container {
     padding: 2rem 30px;
     border-radius: $br;
