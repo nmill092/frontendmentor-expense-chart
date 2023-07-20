@@ -1,8 +1,5 @@
 <script>
-  import { fade, fly } from "svelte/transition";
-
   export let containerH, containerW;
-  let padX = 30;
 </script>
 
 <div
@@ -15,7 +12,7 @@
 </div>
 
 <style lang="scss">
-  @import "../variables.scss";
+  @import "src/_variables.scss";
   .container {
     padding: 2rem 30px;
     border-radius: $br;

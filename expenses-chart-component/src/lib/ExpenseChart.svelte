@@ -91,7 +91,7 @@
 
 <style lang="scss">
   
-  @import "../variables.scss";
+  @import "src/_variables.scss";
 
   .chart-container {
     width: 100%;
