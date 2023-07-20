@@ -12,7 +12,7 @@
 </div>
 
 <style lang="scss">
-   @import '/styles/_variables.scss';
+  @import '../styles/_variables.scss';
   .container {
     padding: 2rem 30px;
     border-radius: $br;

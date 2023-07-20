@@ -34,7 +34,7 @@
 
 <style lang="scss">
   
- @import '/styles/_variables.scss';
+ @import './styles/_variables.scss';
 
   .wrapper {
     height: clamp(60vh, 660px, 90vh);
