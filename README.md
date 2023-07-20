@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://frontendmentor-expense-chart.pages.dev/](https://your-solution-url.com](https://frontendmentor-expense-chart.pages.dev/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/expense-chart-component-with-svelte-d3-AD0aidbi52)
+- Live Site URL: [https://frontendmentor-expense-chart.pages.dev/](https://frontendmentor-expense-chart.pages.dev/)
 
 ## My process
 
