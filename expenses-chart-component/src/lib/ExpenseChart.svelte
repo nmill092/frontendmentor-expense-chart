@@ -90,7 +90,7 @@
 </div>
 
 <style lang="scss">
-  @use "sass:color";
+  
   @import "../variables.scss";
 
   .chart-container {
@@ -124,7 +124,7 @@
     border-radius: 10px;
     padding: 0.4rem 0.8rem;
     font-weight: $fw-bold;
-    background-color: color.adjust($dark-brown, $alpha: -0.1);
+    background-color: $popup-bg;
     color: white;
     position: absolute;
     left: 0;
