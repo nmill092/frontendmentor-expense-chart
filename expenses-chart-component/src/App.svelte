@@ -1,22 +1,36 @@
 <script>
-  import './global.scss';
-  import './lib/SpendingContainer.svelte';
-  import BalanceContainer from './lib/BalanceContainer.svelte';
-  import SpendingContainer from './lib/SpendingContainer.svelte';
-  import ExpenseChart from './lib/ExpenseChart.svelte';
-  import { fade, fly, slide } from 'svelte/transition';
+  import { easeExpInOut } from "d3";
+  import { onMount } from "svelte";
+  import { fly } from "svelte/transition";
+  import "./global.scss";
+  import BalanceContainer from "./lib/BalanceContainer.svelte";
+  import ExpenseChart from "./lib/ExpenseChart.svelte";
+  import SpendingContainer from "./lib/SpendingContainer.svelte";
 
-  let containerH, containerW; 
+  let mounted = false;
+  let containerH, containerW;
+
+  onMount(() => {
+    mounted = true;
+  }); // hack to enable transition on first render
 </script>
 
-<main class="wrapper">
-  <BalanceContainer/>
-  <SpendingContainer bind:containerH bind:containerW>
-    <ExpenseChart {containerH} {containerW} slot="chart"/>
-  </SpendingContainer>
-</main>
-
-
+{#if mounted}
+  <main
+    class="wrapper"
+    transition:fly={{
+      y: 1000,
+      duration: 1000,
+      opacity: 0.2,
+      easing: easeExpInOut,
+    }}
+  >
+    <BalanceContainer />
+    <SpendingContainer bind:containerH bind:containerW>
+      <ExpenseChart {containerH} {containerW} slot="chart" />
+    </SpendingContainer>
+  </main>
+{/if}
 
 <style lang="scss">
   @import "./_variables";
@@ -24,8 +38,8 @@
   .wrapper {
     height: clamp(60vh, 660px, 90vh);
     width: clamp(30vw, 540px, 90vw);
-    display: grid; 
-    grid-template-rows: .3fr 1fr;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
     grid-gap: 1.3rem;
   }
 </style>
