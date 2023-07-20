@@ -17,7 +17,7 @@
 
 
 <style lang="scss">
-    @import 'src/_variables.scss';
+   @import '/styles/_variables.scss';
     .container {
         border-radius: $br; 
         background-color: $soft-red;

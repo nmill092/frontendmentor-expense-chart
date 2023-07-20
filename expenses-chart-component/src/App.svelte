@@ -2,7 +2,7 @@
   import { easeExpInOut } from "d3";
   import { onMount } from "svelte";
   import { fly } from "svelte/transition";
-  import "./global.scss";
+  import "./styles/global.scss";
   import BalanceContainer from "./lib/BalanceContainer.svelte";
   import ExpenseChart from "./lib/ExpenseChart.svelte";
   import SpendingContainer from "./lib/SpendingContainer.svelte";
@@ -33,7 +33,8 @@
 {/if}
 
 <style lang="scss">
-  @import "src/_variables.scss";
+  
+ @import '/styles/_variables.scss';
 
   .wrapper {
     height: clamp(60vh, 660px, 90vh);
